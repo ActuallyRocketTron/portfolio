@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*header*/
+
+body {
+    background-color:mintcream;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.whoami{
+    grid-column: 1;
+    text-align: center;
+    font-size:30px;
+    cursor: pointer;
+    transition:color 0.3s;
+}
+
+.whoami:hover{
+    color:cyan;
+}
+
+.achievements{
+    grid-column: 2;
+    text-align: center;
+    font-size:30px;
+    cursor: pointer;
+    transition:color 0.3s;
+}
+
+.achievements:hover{
+    color:cyan
+}
+
+.passionprojects{
+    grid-column: 3;
+    text-align: center;
+    font-size:30px;
+    cursor: pointer;
+    transition: color 0.3s
+}
+
+.passionprojects:hover{
+    color:cyan
+}
+
+.contactme{
+    grid-column: 4;
+    text-align:center;
+    font-size:30px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.contactme:hover{
+    color: cyan;
+}
+
+/*main body part*/
+/*about me*/
+
+.image{
+    height:100vh;
+    background-image: url('images/Image_1.jpg');
+    background-size: cover;
+    background-position: center;
+    position:relative;
+} 
+
+.overlay{
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name{
+    text-align:center;
+    color:white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    font-size:100px;
+}
+
+.subtitle{
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    font-size: 2rem;
+    margin-top: 1rem;
+    display:block;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+.main-grid{
+    display:grid;
+    grid-template-columns: 1fr 6fr 1fr;
+}
+
+.left,.right{
+    background-color: transparent;
+}
+
+
+.abtmetext{
+    text-align:center;
+}
+
+/* achievements part*/
+
+.achievements-grid{
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+}
+
+.title{
+    text-align: center;
+    font-size: 30px;
+}
+
+.Containers{
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    min-height: 30vh;
+}
+
+.ach-text{
+    padding:10px;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    height: 100%;  
+
+}
+
+.ach-img img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 3px solid gainsboro;
+}
+
+/*passion projects */
+
+#STEAMslideshow{
+    width:100%;
+    height:300px;
+    object-fit: cover;
+    border: 3px solid gainsboro;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+
+/* footer */
+
+.foot-grid{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 3fr;
+}
+
+.foot-item{
+    text-align: center;
+    padding:5px;
+}
+
+.filler{
+    background-color: transparent;
+}
+
+.unaicon{
+    cursor: pointer;
+    width:64px;
+    height:64px;
+    transition: transform 0.2s;
+}
+
+.unaicon:hover{
+    transform: scale(1.1);
+}
+

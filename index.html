@@ -8,6 +8,27 @@
             <link rel="icon" href="images/save2.png">
         </head>
         <body>
+            <div id="mobile-blocker" style="display: none;">
+                <div style="
+                  position: fixed;
+                  top: 0;
+                  left: 0;
+                  width: 100vw;
+                  height: 100vh;
+                  background-color: white;
+                  z-index: 9999;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  text-align: center;
+                  padding: 2rem;
+                  font-size: 1.2rem;
+                  font-family: sans-serif;
+                ">
+                    Please access this site on a desktop or laptop for the best experience. 
+                </div>
+              </div>
+              
             <header class="header-grid">
                 <div class="whoami" id="ScrollAboutMe">About Me</div>
                 <div class="achievements" id="ScrollAchievements">Achievements</div>
@@ -201,5 +222,11 @@
             </footer>
             <br>
             <script src="script.js"></script>
+            <script>
+                if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+                  document.getElementById("mobile-blocker").style.display = "block";
+                  document.body.style.overflow = "hidden"; 
+                }
+              </script>
         </body>
     </html>

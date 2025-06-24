@@ -1,5 +1,5 @@
 const subtitles = [
-    "Aspiring Programmer",
+    "Aspiring Front-end Developer",
     "Discipline and Perseverance",
     "Student Leader",
     "Challenge seeker",

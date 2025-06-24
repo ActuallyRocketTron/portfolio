@@ -1,8 +1,9 @@
 const subtitles = [
-    "Aspiring Front-end Developer",
+    "Aspiring Front End Developer",
     "Discipline and Perseverance",
     "Student Leader",
     "Challenge seeker",
+    "Robotics Lover",
   ];
   
 let currentIndex = 0;
